@@ -66,7 +66,7 @@ My goal was to link to a DLL and in that so far at least I have failed. But I ha
   
 ## References
 
-My thanx those who created these.
+My thanx to those who created examples in [1] and [2] below.
 
 [1] https://github.com/cambiata/haxe-cpp-basic-example
 
@@ -75,3 +75,5 @@ This simple example from which I took the names and functions did a direct exter
 [2] https://github.com/Gaikov/HaxeWithCppIntegrationExample
 
 This example was actually a bit complex for me to figure out the pieces I need to get a simple thing going. Having gotten my own example going this makes more sense but it uses a static link library. It's a library but not a DLL.
+
+[3] The HXCPP documentation at https://haxe.org/manual/target-cpp-build-environment.html and https://haxe.org/manual/target-cpp-file-format.html.
