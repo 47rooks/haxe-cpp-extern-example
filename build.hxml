@@ -1,0 +1,11 @@
+-cp src
+-cp extlib
+-main Main
+-cpp export/cpp
+-D analyzer-optimize
+-dce full
+-D HXCPP_VERBOSE
+-D HXCPP_M64
+
+-cmd clear
+-cmd export/cpp/Main
