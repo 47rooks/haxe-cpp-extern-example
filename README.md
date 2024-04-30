@@ -2,7 +2,9 @@
 
 Like the Hashlink extension, this is mostly notes for my own benefit. See the references section below for resources I used while getting this built.
 
-My goal was to link to a DLL and in that so far at least I have failed. But I have now got a library statically linking to Haxe.
+This will produce a dynamically linked application. You will need to add the `<PROJECT_DIR>\extlib\hello\cpp\x64\Debug`. It is worth noting here
+that though building a DLL in Visual Studio you will also get a `.lib` as well. This you need to add to the `@:buildXml` metadata in the Haxe wrapper
+class. It is required for the build. But at runtime it is not used. Rather the DLL must be on the path of collocated with the `Hello.exe`.
 
 ## Steps
 
@@ -74,6 +76,6 @@ This simple example from which I took the names and functions did a direct exter
 
 [2] https://github.com/Gaikov/HaxeWithCppIntegrationExample
 
-This example was actually a bit complex for me to figure out the pieces I need to get a simple thing going. Having gotten my own example going this makes more sense but it uses a static link library. It's a library but not a DLL.
+This example was actually a bit complex for me to figure out the pieces I need to get a simple thing going. Having gotten my own example going this makes more sense but it uses a static link library. It uses a library but not a DLL.
 
 [3] The HXCPP documentation at https://haxe.org/manual/target-cpp-build-environment.html and https://haxe.org/manual/target-cpp-file-format.html.
